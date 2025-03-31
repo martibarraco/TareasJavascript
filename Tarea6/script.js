@@ -12,6 +12,6 @@ function convertToFahrenheit(temp) {
     return fahrenheit;
 }
 
-// Pruebas en la consola
+
 convertToCelsius(100);  // 100°F es aproximadamente 37.8°C
 convertToFahrenheit(37.8); // 37.8°C es aproximadamente 100°F

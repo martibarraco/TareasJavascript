@@ -4,7 +4,6 @@ function getTheTitles(books) {
     return titles;
 }
 
-// Ejemplo de uso
 const books = [
     { title: 'El Señor de los Anillos', author: 'J.R.R. Tolkien' },
     { title: '1984', author: 'George Orwell' },
@@ -13,4 +12,3 @@ const books = [
 ];
 
 getTheTitles(books); 
-// Salida en consola: ["El Señor de los Anillos", "1984", "Cien años de soledad", "Don Quijote de la Mancha"]

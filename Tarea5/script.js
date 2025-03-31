@@ -6,7 +6,7 @@ function leapYears(year) {
     }
 }
 
-// Ejemplo de uso:
+//Ejemplo
 leapYears(2024); // true
 leapYears(1900); // false
 leapYears(2000); // true

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Elemento a la Lista</title>
+    <script>
+        function añadirElemento() {
+            const texto = document.getElementById("inputElemento").value;
+
+            if (texto.trim() !== "") {
+
+                const nuevoElemento = document.createElement("li");
+                nuevoElemento.textContent = texto;
+
+                document.getElementById("lista").appendChild(nuevoElemento);
+                document.getElementById("inputElemento").value = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul id="lista">
+        <!-- La lista está inicialmente vacía -->
+    </ul>
+    
+    <input type="text" id="inputElemento" placeholder="Escribe un elemento">
+    <button onclick="añadirElemento()">Añadir elemento</button>
+</body>
+</html>

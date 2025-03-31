@@ -3,6 +3,6 @@ function reverseString(texto) {
     console.log(reversed);
 }
 
-// Ejemplo de uso
+// Ejemplo
 reverseString("Hola Mundo");
 

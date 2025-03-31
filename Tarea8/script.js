@@ -1,6 +1,6 @@
 function findTheOldest(people) {
     const oldest = people.reduce((oldestPerson, currentPerson) => {
-        // Si la persona no tiene "yearOfDeath", asumimos que sigue viva y tomamos el año actual
+
         const currentYear = new Date().getFullYear();
         
         const ageOldest = (oldestPerson.yearOfDeath || currentYear) - oldestPerson.yearOfBirth;
@@ -13,7 +13,7 @@ function findTheOldest(people) {
     return oldest;
 }
 
-// Ejemplo de uso
+
 const people = [
     { name: "Carly", yearOfBirth: 1942, yearOfDeath: 1970 },
     { name: "Ray", yearOfBirth: 1962, yearOfDeath: 2011 },
@@ -23,4 +23,4 @@ const people = [
 ];
 
 findTheOldest(people); 
-// Salida en consola: La persona más vieja es Alice (vivió 100 años) o Bob si sigue vivo.
+
